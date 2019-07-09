@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import echarts from 'echarts'
+// 引入全局过滤器
+import '@/commonJs/allFilter' 
 
 Vue.config.productionTip = false
 

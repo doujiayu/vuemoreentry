@@ -28,3 +28,8 @@ vue 单页面入口 改为多个入口
 路由 history
 sass 下载依赖包 - webpck.config.js  rules 配置规则
 echarts 图表  下载依赖包 - main.js 全局注册 使用
+
+
+
+模块划分代码
+components 文件作用： 放置项目公共基础组件

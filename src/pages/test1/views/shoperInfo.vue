@@ -1,7 +1,7 @@
 <template>
    <div id="shopInfo">
        <div class="shop_tit">
-           <h2>店铺概况</h2>
+           <h2>店铺概况{{"-1" | filterStatuss}} ----- {{"-1" | FILTER_DATA}} 时间戳转换{{"1557040742719" | TIME_CHANGE}} {{'23.23233' || TOFIXED}}</h2>
        </div>
        <!-- 店铺简介 -->
        <div class="shop_base xy_center">
@@ -18,7 +18,6 @@
               <span>
                   发布商品
               </span>
-
           </div>
 
        </div>
@@ -44,9 +43,8 @@
                    <span class='x-solid' v-if='index!=3'></span>
                </ul>
            </div>
-            
        </div>
-<div  style='position:relative;'>
+    <div style='position:relative;'>
                 <div id='main' style='width:1200px;height:600px;'></div>
                 <el-form style='position:absolute;top:13px;right:10px;'>
                      <el-form-item label="" prop="date1">
@@ -67,16 +65,16 @@
 </template>
 <script>
 export default {
+    name:"shoperInfo",
     data () {
         return {
             ruleForm:{
                 date1: ''
-
             }
         }
     },
     mounted(){
-         this.drawLines();
+        //  this.drawLines();
     },
     methods:{
          drawLines(){

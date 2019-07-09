@@ -4,13 +4,12 @@
         <canvas id="test-stock" width="600" height="400" ref='cvs'>
             <p>Current Price: 25.51</p>
         </canvas>
-        
-
-
+        <promiseDemo/>
     </div>
 </template>
 <script>
- 
+// import newDemo from './promise.vue'
+
 export default {
     data(){
         return{
@@ -19,7 +18,6 @@ export default {
     },
     created(){
         this.canvasScope();
-
     },
     methods:{
         // canvas 是否支持当前浏览器
@@ -33,11 +31,11 @@ export default {
             // } else {
             //     console.log('你的浏览器不支持Canvas!');
             // }
-
-
         }
-    }
-    
+    },
+    // components:{
+    //     newDemo
+    // }
 }
 </script>
 <style lang="scss" scope>

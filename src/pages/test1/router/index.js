@@ -11,8 +11,8 @@ export default new Router({
     routes: [
         {
             path: '/test1.html/',
-            name: 'HelloWorld',
-            component: HelloWorld
+            name: 'shoperInfo',
+            component: shoperInfo
         },
         {
             path: '/test1.html/goods.html',
